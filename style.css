@@ -37,3 +37,31 @@ td {
 }
 
 /* reset:end */
+/* 設定全域環境: start */
+/* 顏色、圖片參數化 */
+:root {
+  /* color */
+  --main-text-color: #333333;
+  --main-background-color: #f6f7f8;
+  --header-color: #666666;
+  --header-box-shadow: 0 4px 12px 0 rgba(0,0,0,0.08);
+  --nav-link-color: #666666;
+  --social-media-link-color: #999999;
+  --social-media-link-hover-color: #ff6600;
+  --title-color: #ff6600;
+  --company-color: #666666;
+  --duration-color: #666666;
+}
+
+
+html, body {
+  /* 全域色彩 */
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
+  
+  /* 導入 GOOGLE FONTS 字體 */
+  font-family: "Lato","Noto Sans TC", sans-serif;
+}
+
+
+/* 設定全域環境: end */
