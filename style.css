@@ -265,7 +265,7 @@ hr {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: center;;
+    align-items: center;
     max-width: 1500px;
     margin: 0 auto;
   }
