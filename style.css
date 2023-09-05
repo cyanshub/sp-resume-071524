@@ -55,6 +55,37 @@ td {
 }
 
 
+/* 實作 darkmode */
+[data-theme= "dark"] {
+  /* color */
+  --main-text-color: #f6faff;
+  --main-background-color: #3a3a3a;
+  --header-color: rgb(128, 128, 177);
+  --header-box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.08);
+  --nav-link-color: rgb(128, 128, 177);
+  --social-media-link-color: #999999;
+  --social-media-link-hover-color: rgb(128, 128, 177);
+  --title-color: rgb(128, 128, 177);
+  --company-color: rgb(128, 128, 177);
+  --duration-color: rgb(128, 128, 177);
+  --decoration-line-color: #999999;
+}
+
+.nav-group {
+  display: flex;
+}
+
+.nav-icon {
+  flex-flow: row wrap;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#nav-darkmode-toggle {
+  display: none;
+}
+
+
 html, body {
   /* 全域色彩 */
   color: var(--main-text-color);
