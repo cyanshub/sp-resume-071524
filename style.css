@@ -111,13 +111,50 @@ h3 {
 
 p {
   color: var(--main-text-color);
-  border: 1px solid red;
   justify-content: space-between;
+  text-align: justify;
 }
 
 .info-section, .skill-section, .experience-section {
   width: 100%;
   margin-bottom: 50px;
+}
+
+
+/* 設定 info-section 樣式 */
+.info-section {
+  text-align: center;
+}
+
+.avatar-img {
+  border-radius: 25px;
+}
+
+.name {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.social-media {
+  margin-bottom: 20px;
+}
+
+.social-media-link {
+  color: var(--social-media-link-color);
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.social-media-link:hover {
+  color: var(--social-media-link-hover-color);
+}
+
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: var(--title-color);
 }
 
 
