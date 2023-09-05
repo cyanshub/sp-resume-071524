@@ -92,5 +92,36 @@ nav {
 }
 
 
+/* 設定 main 樣式 */
+main {
+  padding: 25px 50px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 1.5rem 0 0.5rem;
+  width: 100%;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem;
+  font-weight: 500;
+}
+
+p {
+  color: var(--main-text-color);
+  border: 1px solid red;
+  justify-content: space-between;
+}
+
+.info-section, .skill-section, .experience-section {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+
+
+
 
 
