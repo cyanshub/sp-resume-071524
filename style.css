@@ -67,6 +67,30 @@ html, body {
 /* 設定全域環境: end */
 
 
+/* 設定 header 基本樣式 */
+header {
+  height: 60px;
+  color: var(--header-color);
+  box-shadow: var(--header-box-shadow);
+}
+
+nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.nav-title {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: var(--nav-link-color);
+}
+
 
 
 
