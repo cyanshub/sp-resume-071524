@@ -104,6 +104,17 @@ header {
   height: 60px;
   color: var(--header-color);
   box-shadow: var(--header-box-shadow);
+
+  /* 固定標題列 */
+  background-color: var(--main-background-color);
+  width: 100%;
+  position: fixed;
+  top:0;
+  z-index: 10;
+}
+
+main {
+  margin-top: 60px;
 }
 
 nav {
@@ -268,6 +279,7 @@ hr {
     align-items: center;
     max-width: 1500px;
     margin: 0 auto;
+    margin-top: 60px;
   }
 
   .info-section {
