@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* reset:start */
 html {
   box-sizing: border-box;
@@ -37,38 +38,196 @@ td {
 }
 
 /* reset:end */
-/* 設定全域環境: start */
 /* 顏色、圖片參數化 */
 :root {
   /* color */
   --main-text-color: #333333;
   --main-background-color: #f6f7f8;
   --header-color: #666666;
-  --header-box-shadow: 0 4px 12px 0 rgba(0,0,0,0.08);
+  --header-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
   --nav-link-color: #666666;
   --social-media-link-color: #999999;
   --social-media-link-hover-color: #008ae6;
-  --title-color: #008ae6
-  --company-color: #666666;
+  --title-color: #008ae6 --company-color: #666666;
   --duration-color: #666666;
   --decoration-line-color: #999999;
 }
 
-
 /* 實作 darkmode */
-[data-theme= "dark"] {
+[data-theme=dark] {
   /* color */
   --main-text-color: #f6faff;
   --main-background-color: #3a3a3a;
-  --header-color: rgb(128, 128, 177);
+  --header-color: rgb(46,95,154);
   --header-box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.08);
-  --nav-link-color: rgb(128, 128, 177);
+  --nav-link-color: rgb(46,95,154);
   --social-media-link-color: #999999;
-  --social-media-link-hover-color: rgb(128, 128, 177);
-  --title-color: rgb(128, 128, 177);
-  --company-color: rgb(128, 128, 177);
-  --duration-color: rgb(128, 128, 177);
+  --social-media-link-hover-color: #f6faff;
+  --title-color: rgb(46,95,154);
+  --company-color: rgb(46,95,154);
+  --duration-color: rgb(46,95,154);
   --decoration-line-color: #999999;
+}
+
+/* 設定 header 基本樣式 */
+header {
+  height: 60px;
+  color: var(--header-color);
+  box-shadow: var(--header-box-shadow);
+  /* 固定標題列 */
+  background-color: var(--main-background-color);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+header nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+header nav .nav-title {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+header nav .nav-link {
+  color: var(--nav-link-color);
+}
+
+/* 設定 info-section 樣式 */
+.info-section {
+  text-align: center;
+}
+
+.avatar-img {
+  border-radius: 25px;
+  width: 128px;
+  height: 128px;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.social-media-link {
+  color: var(--social-media-link-color);
+  text-decoration: none;
+}
+
+.social-media-link:hover {
+  color: var(--social-media-link-hover-color);
+}
+
+.title {
+  margin-bottom: 10px;
+  text-align: start;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: var(--title-color);
+}
+
+.description-tittle {
+  border-top: 1px solid var(--decoration-line-color);
+}
+
+.description {
+  text-indent: 2em;
+}
+
+/* 設定 skill-section 與 experience-section 樣式 */
+.skill-name {
+  border-top: 1px solid var(--decoration-line-color);
+  padding-top: 16px;
+}
+
+.skill-description {
+  text-align: justify;
+}
+
+.skill-description {
+  margin-bottom: 20px;
+}
+
+.company,
+.duration {
+  color: var(--main-text-color);
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.fa-building,
+.fa-calendar-alt {
+  margin-right: 5px;
+  color: var(--company-color);
+}
+
+/* 設定 main 排版 */
+main {
+  margin-top: 60px;
+  padding: 25px 50px;
+}
+
+.info-section,
+.skill-section,
+.experience-section {
+  width: 100%;
+  margin-bottom: 1px;
+}
+
+/* 導入媒體查詢(寬576px以上) */
+@media screen and (min-width: 576px) {
+  .skill-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .skill {
+    flex-basis: 30%;
+  }
+  .skill-description {
+    margin-bottom: 5px;
+  }
+}
+/* 導入媒體查詢(寬1200px以上) */
+@media screen and (min-width: 1200px) {
+  .experience-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .job-title {
+    border-top: 1px solid var(--decoration-line-color);
+    padding-top: 16px;
+  }
+  .experience-item {
+    flex-basis: 30%;
+  }
+  main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  main .title {
+    margin-bottom: 60px;
+  }
+  .info-section {
+    flex-basis: 30%;
+  }
+  .skill-experience-section {
+    flex-basis: 66%;
+  }
+}
+html,
+body {
+  color: var(--main-text-color); /* 全域色彩 */
+  background-color: var(--main-background-color); /* 全域色彩 */
+  font-family: "Lato", "Noto Sans TC", sans-serif; /* 導入 GOOGLE FONTS 字體 */
 }
 
 .nav-group {
@@ -83,61 +242,6 @@ td {
 
 #nav-darkmode-toggle {
   display: none;
-}
-
-
-html, body {
-  /* 全域色彩 */
-  color: var(--main-text-color);
-  background-color: var(--main-background-color);
-  
-  /* 導入 GOOGLE FONTS 字體 */
-  font-family: "Lato","Noto Sans TC", sans-serif;
-}
-
-
-/* 設定全域環境: end */
-
-
-/* 設定 header 基本樣式 */
-header {
-  height: 60px;
-  color: var(--header-color);
-  box-shadow: var(--header-box-shadow);
-
-  /* 固定標題列 */
-  background-color: var(--main-background-color);
-  width: 100%;
-  position: fixed;
-  top:0;
-  z-index: 10;
-}
-
-main {
-  margin-top: 60px;
-}
-
-nav {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 50px;
-}
-
-.nav-title {
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.nav-link {
-  color: var(--nav-link-color);
-}
-
-
-/* 設定 main 樣式 */
-main {
-  padding: 25px 50px;
 }
 
 h2 {
@@ -159,58 +263,6 @@ p {
   text-align: justify;
 }
 
-.info-section, .skill-section, .experience-section {
-  width: 100%;
-  margin-bottom: 50px;
-}
-
-
-/* 設定 info-section 樣式 */
-.info-section {
-  text-align: center;
-}
-
-.avatar-img {
-  border-radius: 25px;
-  width: 128px;
-  height: 128px;
-}
-
-.name {
-  font-size: 2rem;
-  margin: 20px 0;
-}
-
-.social-media {
-  margin-bottom: 20px;
-}
-
-.social-media-link {
-  color: var(--social-media-link-color);
-  margin: 0 5px;
-  text-decoration: none;
-}
-
-.social-media-link:hover {
-  color: var(--social-media-link-hover-color);
-}
-
-.title {
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 0.9rem;
-  letter-spacing: 2px;
-  color: var(--title-color);
-}
-
-
-
-/* 設定 skill-section 與 experience-section 樣式 */
-.skill-name {
-  border-top: 1px solid var(--decoration-line-color);
-  padding-top: 16px;
-}
-
 hr {
   border: 0px;
   height: 1px;
@@ -218,83 +270,26 @@ hr {
   margin: 20px 0;
 }
 
-.company, .duration {
+.link-formats {
   color: var(--main-text-color);
-  font-size: 12px;
-  margin-right: 20px;
+  text-decoration: none;
 }
 
-.fa-building, .fa-calendar-alt {
-  margin-right: 5px;
-  color: var(--company-color);
+.image-container {
+  overflow: hidden;
+  /* 隱藏溢出部分 */
 }
 
-.description{
-  text-indent: 2em;
+.image-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* 保持原始比例，填滿容器 */
 }
 
-.description, .skill-description{
-  text-align: justify;
+.img-shadow {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-.skill-description {
-  margin-bottom: 20px;
-}
-
-
-
-/* 導入媒體查詢(寬576px以上) */
-@media screen and (min-width: 576px) {
-  .skill-section {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-  }
-
-  .skill {
-    flex-basis: 30%;
-  }
-
-  .skill-description {
-    margin-bottom: 5px;
-  }
-}
-
-
-/* 導入媒體查詢(寬1200px以上) */
-@media screen and (min-width: 1200px) {
-  .experience-section {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-  }
-
-  .job-title {
-    border-top: 1px solid var(--decoration-line-color);
-    padding-top: 16px;
-  }
-
-  .experience-item {
-    flex-basis: 30%;
-  }
-
-  main {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1500px;
-    margin: 0 auto;
-    margin-top: 60px;
-  }
-
-  .info-section {
-    flex-basis: 30%;
-  }
-
-  .skill-experience-section {
-    flex-basis: 66%;
-  }
-}
-
-
+.cursor-pointer {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
