@@ -3,6 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- 手動置換網頁圖徽 -->
+  <link rel="icon" type="image/svg+xml" href="./images/address-book-regular.svg" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>我的履歷</title>
 
@@ -24,11 +27,11 @@
         <span class="nav-title">
           Chin-Yang, Huang
         </span>
-      </a>      
+      </a>
       <div class="nav-group">
 
         <label for="nav-darkmode-toggle" class="nav-icon">
-          
+
           <span style="white-space: nowrap;">
             <i class="fa fa-moon me-1"></i>
             深色模式
@@ -48,11 +51,9 @@
           <img class="avatar-img" src="./images/avatar.jpg" alt="人像">
         </a>
       </div>
-
       <h1 class="name m-2">
         <a class="link-formats" href="#">黃晉揚</a>
       </h1>
-
       <!-- 聯絡方式 -->
       <div class="m-1 social-media">
         <a href="mailto:travel15740@gmail.com" class="social-media-link" target="_blank" rel="noopenner noreferrer"><i
@@ -61,50 +62,82 @@
         <span class="social-media-link cursor-pointer">Cel. 0922-462897</span>
       </div>
 
-      <div class="title">網頁後端工程師 | 擅長工具: JavaScript、HTML、CSS、Bootstrap、SQL與資料庫</div>
+      <div class="title">軟體工程師 | 前端與後端開發 | 擅長技術：React、Node.js、JavaScript、HTML、CSS、Bootstrap、SQL 與資料庫管理</div>
+    </div>
 
+    <div class="description-section">
       <h3 class="description-tittle pt-3">自我介紹</h3>
-
       <p class="description mb-2">
         過去於民國108年任職於工業技術研究院綠能所(簡稱工研院)，先後在太陽光電技術組與環境淨零研究室擔任副工程師。
-        學生時期，透過推甄錄取國立臺灣大學土木工程系水利工程組碩士班，當時對土砂災害研究感到興趣，因而選擇加入比利時籍老師卡艾瑋教授的研究團隊，學習影像分析並應用於顆粒流力學行為的相關研究，於民國107年7月25日通過碩士論文學位英語口試，取得A+ 的口試成績，並以英語完成碩士論文研究。
+        學生時期，透過推甄錄取國立臺灣大學土木工程系水利工程組碩士班，當時對土砂災害研究感到興趣，因而選擇加入比利時籍老師卡艾瑋教授的研究團隊，學習影像分析並應用於顆粒流力學行為的相關研究，於民國107年7月25日通過碩士論文學位英語口試，取得A+
+        的口試成績，並以英語完成碩士論文研究。
       </p>
-
-      <p class="description">由於受到工作經驗啟發，個人開始以軟體工程師為目標，學習相關專業技能，現已部署2個網頁專案，期望未來能發揮專長，替公司解決問題，並在職場發揮最大效用。
+      <p class="description">由於受到工作經驗啟發，個人開始以軟體工程師為目標，學習相關專業技能，現已部署數個網頁專案，期望未來能發揮專長，替公司解決問題，並在職場發揮最大效用。
       </p>
-      
     </div>
+
 
     <!--為了方便排版技能與經歷  -->
     <div class="skill-experience-section">
       <!-- 技能 -->
+      <h2>作品集</h2>
       <div class="skill-section">
-        <h2>作品集</h2>
+
+        <!-- 作品描述 -->
         <div class="skill">
-
-
           <h3 class="skill-name">作品描述</h3>
           <p class="skill-description">
-            作品集專案以關聯式資料庫為主，應用資料操作（Create、Read、Update、Delete）進行後端開發，更詳細的導覽可見於個人 GitHub 網站。可用測試帳號直接登入作品集陳列的網站。惟初次連線需等待伺服器重啟時間，最長約需 1 分鐘；若伺服器 15 分鐘沒有偵測到流量則會自動關閉，下次連線需再次等待伺服器重啟。
+            作品集包含前端與後端的專案，前端部分使用 React 進行開發，後端部分則使用 Node.js 搭配 Express.js
+            進行全端開發。後端專案使用關聯式資料庫，設計 Create、Read、Update、Delete等資料操作功能。更詳細的導覽可見於個人的 GitHub 網站。</p>
+            
+          <p class="skill-description">您可使用測試帳號直接登入 Node.js 專案網站。請注意，初次連線時可能需等待伺服器重啟，最長約 1 分鐘；若伺服器 15 分鐘內沒有偵測到入站流量則會進行關閉。</p>
+            
           <h3 class="skill-name">測試帳號</h3>
-          <p class="skill-description"></p>
+          
           <ul>
             <li style="white-space: nowrap;" class="ms-3">email: root@example.com</li>
             <li style="white-space: nowrap;" class="ms-3">email: user1@example.com</li>
             <li style="white-space: nowrap;" class="ms-3">email: user2@example.com</li>
-            <li style="white-space: nowrap;"class="ms-3 mb-3">password: 12345678</li>
+            <li style="white-space: nowrap;" class="ms-3 mb-3">password: 12345678</li>
           </ul>
-          </p>
+          
         </div>
 
         <!-- 作品 1 -->
         <div class="skill image-container">
-          <h3 class="skill-name">作品1: 揪團訂飲料專案</h3>
+          <h3 class="skill-name">作品1: 毛小孩星球 React 專案</h3>
+          <div>
+            <a class="link-formats" href="https://github.com/cyanshub/sp-adopt-react-071924" target="_blank"
+              rel="noopenner noreferrer">
+              <i class="fa-brands fa-github me-1"></i>
+              <span>GitHub 頁面 | 使用 React 開發</span>
+            </a>
+          </div>
+
+          <div class="mb-2">
+            <a class="link-formats" href="https://cyanshub.github.io/sp-adopt-react-071924/" target="_blank"
+              rel="noopenner noreferrer">
+              <span>對外網站</span>
+            </a>
+            <a class="link-formats" href="#" target="_blank" rel="noopenner noreferrer">
+              <span class="d-none"> | Web APIs 文件</span>
+            </a>
+          </div>
+
+          <a class="link-formats" href="https://cyanshub.github.io/sp-adopt-react-071924/" target="_blank"
+            rel="noopenner noreferrer">
+            <img class="text-center img-shadow" src="./images/sp3.jpg" alt="毛小孩星球 React 專案">
+          </a>
+        </div>
+
+        <!-- 作品 2 -->
+        <div class="skill image-container">
+          <h3 class="skill-name">作品2: 揪團訂飲料專案</h3>
           <div>
             <a class="link-formats" href="https://github.com/cyanshub/sp-ordering-drinks-061624" target="_blank"
               rel="noopenner noreferrer">
               <i class="fa-brands fa-github me-1"></i>
-              <span>GitHub 頁面</span>
+              <span>GitHub 頁面| 使用 Node.js 開發</span>
             </a>
           </div>
 
@@ -121,19 +154,19 @@
           </div>
           <a class="link-formats" href="https://sp-ordering-drinks-061624.onrender.com" target="_blank"
             rel="noopenner noreferrer">
-            <img class="text-center img-shadow" src="./images/sp1.jpg" alt="揪團訂飲料專案" width="270px" height="370px">
+            <img class="text-center img-shadow" src="./images/sp1.jpg" alt="揪團訂飲料專案">
           </a>
         </div>
 
 
-        <!-- 作品 2 -->
+        <!-- 作品 3 -->
         <div class="skill image-container">
-          <h3 class="skill-name">作品2: 太陽光電網站</h3>
+          <h3 class="skill-name">作品3: 太陽光電網站</h3>
           <div>
             <a class="link-formats" href="https://github.com/cyanshub/sp-pvlist-051524" target="_blank"
               rel="noopenner noreferrer">
               <i class="fa-brands fa-github me-1"></i>
-              <span>GitHub 頁面</span>
+              <span>GitHub 頁面| 使用 Node.js 開發</span>
             </a>
           </div>
 
@@ -151,10 +184,12 @@
 
           <a class="link-formats" href="https://sp-pvlist-051524.onrender.com" target="_blank"
             rel="noopenner noreferrer">
-            <img class="text-center img-shadow" src="./images/sp2.jpg" alt="太陽光電網站" width="270px" height="370px">
+            <img class="text-center img-shadow" src="./images/sp2.jpg" alt="太陽光電網站">
           </a>
-
         </div>
+
+
+
       </div>
 
       <!-- 經歷 -->

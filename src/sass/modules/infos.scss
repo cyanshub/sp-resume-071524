@@ -1,5 +1,9 @@
 /* 設定 info-section 樣式 */
 .info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -23,17 +27,14 @@
 }
 
 .title {
-  margin-bottom: 10px;
   text-align: start;
   font-size: 0.9rem;
   letter-spacing: 2px;
   color: var(--title-color);
 }
 
-.description-tittle {
-  border-top: 1px solid var(--decoration-line-color);
-}
 
 .description {
   text-indent: 2em
 }
+

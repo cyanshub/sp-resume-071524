@@ -6,7 +6,8 @@ main {
 
 .info-section,
 .skill-section,
-.experience-section {
+.experience-section,
+.description-section {
   width: 100%;
   margin-bottom: 1px;
 }
@@ -15,7 +16,7 @@ main {
 @media screen and (min-width: 576px) {
   .skill-section {
     display: flex;
-    flex-flow: row wrap;
+    // flex-flow: row wrap;
     justify-content: space-between;
   }
 
@@ -53,18 +54,19 @@ main {
     align-items: center;
     max-width: 1500px;
     margin: 0 auto;
-    margin-top: 30px;
-
-    .title {
-      margin-bottom: 60px;
-    }
+    margin-top: 60px;
   }
 
   .info-section {
     flex-basis: 30%;
+    margin: 0 auto;
+  }
+
+  .description-section {
+    flex-basis: 40%;
   }
 
   .skill-experience-section {
-    flex-basis: 66%;
+    flex-basis: 100%;
   }
 }
