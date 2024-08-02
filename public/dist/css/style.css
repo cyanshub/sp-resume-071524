@@ -189,6 +189,10 @@ header nav .nav-link {
   color: var(--company-color);
 }
 
+.exp-description {
+  white-space: nowrap;
+}
+
 /* 設定 main 排版 */
 main {
   margin-top: 60px;
